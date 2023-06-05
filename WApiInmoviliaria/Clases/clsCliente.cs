@@ -10,6 +10,14 @@ namespace WApiInmoviliaria.Clases
     public class clsCliente
     {
         DBInmobiliariaEntities dbsuper = new DBInmobiliariaEntities();
+        public Cliente cliente { get; set; }
+
+        public string Agregar()
+        {
+            dbsuper.Clientes.Add(cliente);
+            dbsuper.SaveChanges();
+            return "Se agregó el cliente: " + cliente.nombre+" "+ cliente.apellido;
+        }
 
         public Cliente Consultar(int idCliente)
         {

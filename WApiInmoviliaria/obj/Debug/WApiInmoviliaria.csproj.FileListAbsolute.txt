@@ -99,3 +99,4 @@ C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.csproj.CopyComplete
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.pdb
+C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.csproj.AssemblyReference.cache
