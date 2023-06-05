@@ -1,3 +1,4 @@
+C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.csproj.CoreCompileInputs.cache
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\WApiInmoviliaria.dll.config
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\WApiInmoviliaria.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\WApiInmoviliaria.pdb
@@ -51,6 +52,8 @@ C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\roslyn\VBCSCompiler.exe
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\Antlr3.Runtime.dll
+C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\EntityFramework.dll
+C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\EntityFramework.SqlServer.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\Newtonsoft.Json.dll
@@ -65,6 +68,8 @@ C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\System.Web.WebPages.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\System.Web.WebPages.Razor.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\WebGrease.dll
+C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\EntityFramework.xml
+C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\EntityFramework.SqlServer.xml
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\Newtonsoft.Json.xml
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\System.Net.Http.Formatting.xml
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\System.Web.Helpers.xml
@@ -88,8 +93,6 @@ C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\es\System.Web.WebPages.resources.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.csproj.AssemblyReference.cache
-C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.csproj.CoreCompileInputs.cache
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.csproj.CopyComplete
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.dll
 C:\Users\lukas\OneDrive\Documentos\ITM\WEB\WApiInmoviliaria\WApiInmoviliaria\obj\Debug\WApiInmoviliaria.pdb

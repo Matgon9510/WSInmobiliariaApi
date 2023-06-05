@@ -162,21 +162,72 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Clases\clsCliente.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BDInmoviliaria.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDInmoviliaria.Context.tt</DependentUpon>
+    <Compile Include="Models\Cargo.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BDInmoviliaria.Designer.cs">
+    <Compile Include="Models\Ciudad.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cliente.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Comision.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContratoPropiedad.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbInmobiliaria.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BDInmoviliaria.edmx</DependentUpon>
+      <DependentUpon>dbInmobiliaria.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbInmobiliaria.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbInmobiliaria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbInmobiliaria.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Departamento.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Empleado.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estacionamiento.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EstadoPropiedad.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Genero.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Propiedade.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sede.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TiposContrato.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TiposPropiedad.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tipo_Tel.cs">
+      <DependentUpon>dbInmobiliaria.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -189,9 +240,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\BDInmoviliaria.Context.tt">
+    <Content Include="Models\dbInmobiliaria.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>BDInmoviliaria.Context.cs</LastGenOutput>
+      <DependentUpon>dbInmobiliaria.edmx</DependentUpon>
+      <LastGenOutput>dbInmobiliaria.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\dbInmobiliaria.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbInmobiliaria.edmx</DependentUpon>
+      <LastGenOutput>dbInmobiliaria.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -214,13 +271,13 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\BDInmoviliaria.edmx">
+    <EntityDeploy Include="Models\dbInmobiliaria.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BDInmoviliaria.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbInmobiliaria.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\BDInmoviliaria.edmx.diagram">
-      <DependentUpon>BDInmoviliaria.edmx</DependentUpon>
-    </None>
+    <Content Include="Models\dbInmobiliaria.edmx.diagram">
+      <DependentUpon>dbInmobiliaria.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
