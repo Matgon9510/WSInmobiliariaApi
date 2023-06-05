@@ -16,8 +16,8 @@ namespace WApiInmoviliaria.Controllers
             // GET api/<controller>/5
             public Propiedade Get(int idPropiedad)
             {
-                clsPropiedad propiedade = new clsPropiedad();
-                return propiedade.Consultar(idPropiedad);
+                clsPropiedad propiedad = new clsPropiedad();
+                return propiedad.Consultar(idPropiedad);
             }
         }
 }
