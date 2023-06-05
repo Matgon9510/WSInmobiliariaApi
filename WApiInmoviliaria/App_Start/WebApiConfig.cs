@@ -10,7 +10,8 @@ namespace WApiInmoviliaria
         public static void Register(HttpConfiguration config)
         {
             // Configuración y servicios de API web
-
+            // New code
+            config.EnableCors();
             // Rutas de API web
             config.MapHttpAttributeRoutes();
 

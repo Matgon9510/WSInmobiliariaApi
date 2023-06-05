@@ -11,13 +11,13 @@ using System.Web.Http.Cors;
 namespace WApiInmoviliaria.Controllers
 {
     [EnableCors(origins: "http://localhost:3376", headers: "*", methods: "*")]
-    public class ClienteController : ApiController
+    public class PropiedadController : ApiController
     {
-        // GET api/<controller>/5
-        public Cliente Get(int idCliente)
-        {
-            clsCliente cliente = new clsCliente();
-            return cliente.Consultar(idCliente);
+            // GET api/<controller>/5
+            public Propiedade Get(int idPropiedad)
+            {
+                clsPropiedad propiedade = new clsPropiedad();
+                return propiedade.Consultar(idPropiedad);
+            }
         }
-    }
 }
