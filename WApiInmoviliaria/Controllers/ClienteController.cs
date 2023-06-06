@@ -19,12 +19,26 @@ namespace WApiInmoviliaria.Controllers
             clsCliente cliente = new clsCliente();
             return cliente.Consultar(idCliente);
         }
+
         // POST api/values
         public string Post([FromBody] Cliente cliente)
         {
             clsCliente _cliente = new clsCliente();
             _cliente.cliente = cliente;
             return _cliente.Agregar();
+        }
+
+        // DELETE api/values/5
+        /*public string Delete([FromBody] Cliente dcliente)
+        {
+            clsCliente _cliente = new clsCliente();
+            _cliente.cliente = dcliente;
+            return _cliente.Eliminar();
+        }*/
+        public string Delete(int idCliente)
+        {
+            clsCliente _cliente = new clsCliente();
+            return _cliente.Eliminar(idCliente);
         }
     }
 }
