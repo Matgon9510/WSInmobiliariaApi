@@ -193,11 +193,15 @@
     <Compile Include="Clases\clsCliente.cs" />
     <Compile Include="Clases\clsGenero.cs" />
     <Compile Include="Clases\clsPropiedad.cs" />
+    <Compile Include="Clases\clsTelefono.cs" />
+    <Compile Include="Clases\clsTipoTelefono.cs" />
     <Compile Include="Controllers\CiudadController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\GeneroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PropiedadController.cs" />
+    <Compile Include="Controllers\TelefonoController.cs" />
+    <Compile Include="Controllers\TipoTelController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

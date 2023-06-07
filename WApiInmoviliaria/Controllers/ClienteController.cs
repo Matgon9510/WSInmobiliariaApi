@@ -10,6 +10,7 @@ using System.Web.Http.Cors;
 
 namespace WApiInmoviliaria.Controllers
 {
+    
     [EnableCors(origins: "http://localhost:3376", headers: "*", methods: "*")]
     public class ClienteController : ApiController
     {
@@ -27,18 +28,21 @@ namespace WApiInmoviliaria.Controllers
             _cliente.cliente = cliente;
             return _cliente.Agregar();
         }
+        
+        // PUT api/values/5
+        public string Put([FromBody] Cliente cliente)
+        {
+            clsCliente _cliente = new clsCliente();
+            _cliente.cliente = cliente;
+            return _cliente.Actualizar();
+        }
 
         // DELETE api/values/5
-        /*public string Delete([FromBody] Cliente dcliente)
+        public string Delete([FromBody] Cliente dcliente)
         {
             clsCliente _cliente = new clsCliente();
             _cliente.cliente = dcliente;
             return _cliente.Eliminar();
-        }*/
-        public string Delete(int idCliente)
-        {
-            clsCliente _cliente = new clsCliente();
-            return _cliente.Eliminar(idCliente);
         }
 
         public IQueryable Get()
