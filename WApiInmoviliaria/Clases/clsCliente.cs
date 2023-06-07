@@ -37,6 +37,27 @@ namespace WApiInmoviliaria.Clases
             }
         }
 
+        public IQueryable ListarClientesTelefonos()
+        {
+            return from Cl in dbsuper.Set<Cliente>()
+                   join Tel in dbsuper.Set<Telefono>()
+                   on Cl.id_cliente equals Tel.cliente into TelCli
+                   from x in TelCli.DefaultIfEmpty()
+                   group TelCli by new { Cl.id_cliente, Cl.nombre, Cl.apellido, Cl.direccion, Cl.email, Cl.ciudad, Cl.genero }
+                   into grupoClientes
+                   select new
+                   {
+                       NroTelefonos = grupoClientes.Count(),
+                       ID_Cliente = grupoClientes.Key.id_cliente,
+                       Nombre = grupoClientes.Key.nombre,
+                       Apellido = grupoClientes.Key.apellido,
+                       Direccion = grupoClientes.Key.direccion,
+                       Email = grupoClientes.Key.email,
+                       Ciudad = grupoClientes.Key.ciudad,
+                       Genero = grupoClientes.Key.genero
+                   };
+        }
+
 
     }
 }

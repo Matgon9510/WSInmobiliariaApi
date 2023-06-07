@@ -40,5 +40,11 @@ namespace WApiInmoviliaria.Controllers
             clsCliente _cliente = new clsCliente();
             return _cliente.Eliminar(idCliente);
         }
+
+        public IQueryable Get()
+        {
+            clsCliente cliente = new clsCliente();
+            return cliente.ListarClientesTelefonos();
+        }
     }
 }
