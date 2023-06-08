@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WApiInmoviliaria.Models;
+using System.Web.Http.Cors;
 
 namespace WApiInmoviliaria.Clases
 {
@@ -36,18 +37,18 @@ namespace WApiInmoviliaria.Clases
             dbsuper.SaveChanges();
             return "Se actualizó el teléfono con número " + telefono.numero;
         }
-        public IQueryable ListarTelefonos(int Documento)
+        public IQueryable ListarTelefonos(string id_cliente)
         {
             return from Tel in dbsuper.Set<Telefono>()
                    join TiTe in dbsuper.Set<Tipo_Tel>()
                    on Tel.tipo_telefono equals TiTe.id_tipo_tel
-                   where Tel.cliente == Documento
+                   where Convert.ToString(Tel.cliente) == id_cliente
                    select new
                    {
-                       Codigo = Tel.id_tel,
-                       CodTipoTel = TiTe.id_tipo_tel,
-                       TipoTelefono = TiTe.descripcion,
-                       Numero = Tel.numero
+                       id_tel = Tel.id_tel,
+                       tipo_telefono = TiTe.id_tipo_tel,
+                       descripcion = TiTe.descripcion,
+                       numero = Tel.numero
                    };
         }
     }

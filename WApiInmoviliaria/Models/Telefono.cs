@@ -18,7 +18,8 @@ namespace WApiInmoviliaria.Models
         public string numero { get; set; }
         public int cliente { get; set; }
         public int tipo_telefono { get; set; }
-    
+
+
         public virtual Cliente Cliente1 { get; set; }
         public virtual Tipo_Tel Tipo_Tel { get; set; }
     }

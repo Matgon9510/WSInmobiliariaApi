@@ -14,10 +14,10 @@ namespace WApiInmoviliaria.Controllers
     public class TelefonoController : ApiController
     {
         // GET api/<controller>
-        public IQueryable Get(int Documento)
+        public IQueryable Get(string id_cliente)
         {
             clsTelefono telefono = new clsTelefono();
-            return telefono.ListarTelefonos(Documento);
+            return telefono.ListarTelefonos(id_cliente);
         }
         // POST api/values
         public string Post([FromBody] Telefono telefono)
