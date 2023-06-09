@@ -16,6 +16,7 @@ namespace WApiInmoviliaria.Clases
         public string Agregar()
         {
             dbsuper.Propiedades.Add(propiedad);
+            CalcularValorFinal();
             dbsuper.SaveChanges();
             return "Se agregó la  propiedad: " + propiedad.id_propiedad;
         }
@@ -41,6 +42,9 @@ namespace WApiInmoviliaria.Clases
             _propiedad.estado = propiedad.estado;
             _propiedad.tipo_contrato = propiedad.tipo_contrato;
             _propiedad.precio_inicial = propiedad.precio_inicial;
+            CalcularValorFinal();
+            _propiedad.comision = propiedad.comision;
+            _propiedad.precio_final = propiedad.precio_final;
 
 
             dbsuper.SaveChanges();
@@ -56,5 +60,34 @@ namespace WApiInmoviliaria.Clases
             dbsuper.SaveChanges();
             return "Se eliminó la Propiedad: " + propiedad.id_propiedad;
         }
+
+        private void CalcularValorFinal()
+        {
+            double ValorUnitario;
+            if (propiedad.precio_inicial <= 800000)
+            {
+                propiedad.comision = 1;
+                ValorUnitario = 0.05;
+            }
+            else
+            {
+                if (propiedad.precio_inicial > 800000 && propiedad.precio_inicial <= 1500000)
+                {
+                    propiedad.comision = 2;
+                    ValorUnitario = 0.1;
+                }
+                else
+                {
+                    propiedad.comision = 3;
+                    ValorUnitario = 0.15;
+                }
+            }
+
+            propiedad.precio_final = Convert.ToInt32((propiedad.precio_inicial * ValorUnitario) + propiedad.precio_inicial);
+        }
+
+
+
+
     }
 }
